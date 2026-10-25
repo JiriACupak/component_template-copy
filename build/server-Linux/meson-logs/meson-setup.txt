@@ -1,0 +1,43 @@
+The Meson build system
+Version: 1.12.1
+Source dir: /home/wsl/YSPACE/component-template/component-template
+Build dir: /home/wsl/YSPACE/component-template/component-template/build/server-Linux
+Build type: native build
+Project name: comp-templ
+Project version: 0.2.0.0
+C compiler for the host machine: cc (gcc 11.4.0 "cc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0")
+C linker for the host machine: cc ld.bfd 2.38
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Dependency threads for host machine found: YES unknown (cached)
+Found pkg-config: YES (/usr/bin/pkg-config) 0.29.2
+Did not find CMake 'cmake'
+Found CMake: NO
+Run-time dependency srv-abs found: NO  (tried pkg-config and cmake)
+Looking for a fallback subproject for the dependency srv-abs
+
+Executing subproject srv-abs for machine: host 
+
+Project name: service-abstraction
+Project version: 1.0.0
+C compiler for the host machine: cc (gcc 11.4.0 "cc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0")
+C linker for the host machine: cc ld.bfd 2.38
+Found pkg-config: YES (/usr/bin/pkg-config) 0.29.2
+Configuring conf_srv.h using configuration
+Build targets in project: 1
+Subproject srv-abs finished.
+
+Dependency srv-abs for host machine found: YES 1.0.0 (overridden)
+Configuring conf_templ.h using configuration
+Build targets in project: 3
+
+comp-templ 0.2.0.0
+
+  Subprojects (for host machine)
+    srv-abs       : YES
+
+  User defined options
+    build_class   : server
+    build_platform: Linux
+
+Found ninja-1.13.2.git.kitware.jobserver-pipe-1 at /home/wsl/.local/bin/ninja

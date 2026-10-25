@@ -1,0 +1,213 @@
+[
+  {
+    "name": "srv-abs",
+    "id": "18d2b13@@srv-abs@sha",
+    "type": "shared library",
+    "defined_in": "/home/wsl/YSPACE/component-template/component-template/subprojects/srv-abs/meson.build",
+    "filename": [
+      "/home/wsl/YSPACE/component-template/component-template/build/server-Linux/subprojects/srv-abs/libsrv-abs.so"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "machine": "host",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/home/wsl/YSPACE/component-template/component-template/build/server-Linux/subprojects/srv-abs/libsrv-abs.so.p",
+          "-I/home/wsl/YSPACE/component-template/component-template/build/server-Linux/subprojects/srv-abs",
+          "-I/home/wsl/YSPACE/component-template/component-template/subprojects/srv-abs",
+          "-I/home/wsl/YSPACE/component-template/component-template/build/server-Linux/subprojects/srv-abs/include",
+          "-I/home/wsl/YSPACE/component-template/component-template/subprojects/srv-abs/include",
+          "-fdiagnostics-color=always",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Os",
+          "-fPIC"
+        ],
+        "sources": [
+          "/home/wsl/YSPACE/component-template/component-template/subprojects/srv-abs/src/service.c",
+          "/home/wsl/YSPACE/component-template/component-template/subprojects/srv-abs/src/service_os.c",
+          "/home/wsl/YSPACE/component-template/component-template/subprojects/srv-abs/src/crc32.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-shared",
+          "-fPIC",
+          "-Wl,-soname,libsrv-abs.so"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": "srv-abs",
+    "dependencies": [],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": true,
+    "install_filename": [
+      "/usr/local/lib/x86_64-linux-gnu/libsrv-abs.so"
+    ]
+  },
+  {
+    "name": "comp-templ-srv",
+    "id": "comp-templ-srv@sha",
+    "type": "shared library",
+    "defined_in": "/home/wsl/YSPACE/component-template/component-template/meson.build",
+    "filename": [
+      "/home/wsl/YSPACE/component-template/component-template/build/server-Linux/libcomp-templ-srv.so"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "machine": "host",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/home/wsl/YSPACE/component-template/component-template/build/server-Linux/libcomp-templ-srv.so.p",
+          "-I/home/wsl/YSPACE/component-template/component-template/build/server-Linux",
+          "-I/home/wsl/YSPACE/component-template/component-template",
+          "-I/home/wsl/YSPACE/component-template/component-template/build/server-Linux/common/include",
+          "-I/home/wsl/YSPACE/component-template/component-template/common/include",
+          "-I/home/wsl/YSPACE/component-template/component-template/srv/include",
+          "-I/home/wsl/YSPACE/component-template/component-template/build/server-Linux/subprojects/srv-abs/include",
+          "-I/home/wsl/YSPACE/component-template/component-template/subprojects/srv-abs/include",
+          "-fdiagnostics-color=always",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Os",
+          "-DVERSION=\"0.2.0.0\"",
+          "-DGITREV=\"c34d9d4-dirty\"",
+          "-fPIC",
+          "-pthread",
+          "-DFS_BACKEND=backend_fs_posix",
+          "-DOS_BACKEND=backend_os_posix",
+          "-DCOM_BACKEND=backend_posix_tty",
+          "-DSHARED_BUILD"
+        ],
+        "sources": [
+          "/home/wsl/YSPACE/component-template/component-template/lib/sally-backends/fs/posix_backend.c",
+          "/home/wsl/YSPACE/component-template/component-template/lib/sally-backends/os/posix_backend.c",
+          "/home/wsl/YSPACE/component-template/component-template/lib/sally-backends/com/posix_tty_backend.c",
+          "/home/wsl/YSPACE/component-template/component-template/lib/sally-backends/com/memcom_backend.c",
+          "/home/wsl/YSPACE/component-template/component-template/srv/src/server_com.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-shared",
+          "-fPIC",
+          "-Wl,-soname,libcomp-templ-srv.so",
+          "-Wl,-rpath,$ORIGIN/subprojects/srv-abs",
+          "subprojects/srv-abs/libsrv-abs.so",
+          "-pthread"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [
+      "threads"
+    ],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": false
+  },
+  {
+    "name": "comp-templ-srv-bin",
+    "id": "comp-templ-srv-bin@exe",
+    "type": "executable",
+    "defined_in": "/home/wsl/YSPACE/component-template/component-template/meson.build",
+    "filename": [
+      "/home/wsl/YSPACE/component-template/component-template/build/server-Linux/comp-templ-srv-bin"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "machine": "host",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/home/wsl/YSPACE/component-template/component-template/build/server-Linux/comp-templ-srv-bin.p",
+          "-I/home/wsl/YSPACE/component-template/component-template/build/server-Linux",
+          "-I/home/wsl/YSPACE/component-template/component-template",
+          "-I/home/wsl/YSPACE/component-template/component-template/build/server-Linux/common/include",
+          "-I/home/wsl/YSPACE/component-template/component-template/common/include",
+          "-I/home/wsl/YSPACE/component-template/component-template/srv/include",
+          "-I/home/wsl/YSPACE/component-template/component-template/lib/munit",
+          "-I/home/wsl/YSPACE/component-template/component-template/build/server-Linux/subprojects/srv-abs/include",
+          "-I/home/wsl/YSPACE/component-template/component-template/subprojects/srv-abs/include",
+          "-fdiagnostics-color=always",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Os",
+          "-DVERSION=\"0.2.0.0\"",
+          "-DGITREV=\"c34d9d4-dirty\"",
+          "-pthread",
+          "-DFS_BACKEND=backend_fs_posix",
+          "-DOS_BACKEND=backend_os_posix",
+          "-DCOM_BACKEND=backend_posix_tty",
+          "-DSHARED_BUILD"
+        ],
+        "sources": [
+          "/home/wsl/YSPACE/component-template/component-template/lib/sally-backends/fs/posix_backend.c",
+          "/home/wsl/YSPACE/component-template/component-template/lib/sally-backends/os/posix_backend.c",
+          "/home/wsl/YSPACE/component-template/component-template/lib/sally-backends/com/posix_tty_backend.c",
+          "/home/wsl/YSPACE/component-template/component-template/lib/sally-backends/com/memcom_backend.c",
+          "/home/wsl/YSPACE/component-template/component-template/autotest/srv/server_com.c",
+          "/home/wsl/YSPACE/component-template/component-template/lib/munit/munit.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-Wl,-rpath,$ORIGIN/:$ORIGIN/subprojects/srv-abs",
+          "-Wl,--start-group",
+          "-Wl,--start-group",
+          "libcomp-templ-srv.so",
+          "subprojects/srv-abs/libsrv-abs.so",
+          "-Wl,--end-group",
+          "-Wl,--end-group",
+          "-pthread"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [
+      "threads"
+    ],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": false
+  }
+]

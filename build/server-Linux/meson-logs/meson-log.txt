@@ -1,0 +1,101 @@
+Build started at 2026-10-16T19:12:02.819279
+Main binary: /usr/bin/python3
+Build Options: -Dbuild_platform=Linux -Dbuild_class=server
+Python system: Linux
+The Meson build system
+Version: 1.12.1
+Source dir: /home/wsl/YSPACE/component-template/component-template
+Build dir: /home/wsl/YSPACE/component-template/component-template/build/server-Linux
+Build type: native build
+Project name: comp-templ
+Project version: 0.2.0.0
+C compiler for the host machine: cc (gcc 11.4.0 "cc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0")
+C linker for the host machine: cc ld.bfd 2.38
+-----------
+Detecting archiver via: `gcc-ar --version` -> 0
+stdout:
+GNU ar (GNU Binutils for Ubuntu) 2.38
+Copyright (C) 2022 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or (at your option) any later version.
+This program has absolutely no warranty.
+-----------
+C compiler for the build machine: cc (gcc 11.4.0 "cc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0")
+C linker for the build machine: cc ld.bfd 2.38
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: x86_64
+Target machine cpu: x86_64
+Dependency threads for host machine found: YES unknown (cached)
+Running command: /usr/bin/git describe --always --dirty --abbrev=7 '--exclude=*'
+--- stdout ---
+c34d9d4-dirty
+
+--- stderr ---
+
+
+Pkg-config binary missing from cross or native file, or env var undefined.
+Trying a default Pkg-config fallback at pkg-config
+Found pkg-config: YES (/usr/bin/pkg-config) 0.29.2
+Determining dependency 'srv-abs' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion srv-abs` -> 1
+stderr:
+Package srv-abs was not found in the pkg-config search path.
+Perhaps you should add the directory containing `srv-abs.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'srv-abs' found
+-----------
+CMake binary for host machine is not cached
+CMake binary missing from cross or native file, or env var undefined.
+Trying a default CMake fallback at cmake
+Did not find CMake 'cmake'
+Found CMake: NO
+CMake binary for machine host machine not found. Giving up.
+Run-time dependency srv-abs found: NO  (tried pkg-config and cmake)
+Looking for a fallback subproject for the dependency srv-abs
+
+Executing subproject srv-abs for machine: host 
+
+Project name: service-abstraction
+Project version: 1.0.0
+C compiler for the host machine: cc (gcc 11.4.0 "cc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0")
+C linker for the host machine: cc ld.bfd 2.38
+C compiler for the build machine: cc (gcc 11.4.0 "cc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0")
+C linker for the build machine: cc ld.bfd 2.38
+Pkg-config binary missing from cross or native file, or env var undefined.
+Trying a default Pkg-config fallback at pkg-config
+Found pkg-config: YES (/usr/bin/pkg-config) 0.29.2
+Configuring conf_srv.h using configuration
+Build targets in project: 1
+Subproject srv-abs finished.
+
+Dependency srv-abs for host machine found: YES 1.0.0 (overridden)
+Configuring conf_templ.h using configuration
+Build targets in project: 3
+
+comp-templ 0.2.0.0
+
+  Subprojects (for host machine)
+    srv-abs       : YES
+
+  User defined options
+    build_class   : server
+    build_platform: Linux
+
+Found ninja-1.13.2.git.kitware.jobserver-pipe-1 at /home/wsl/.local/bin/ninja
+Running compile:
+Working directory:  /home/wsl/YSPACE/component-template/component-template/build/server-Linux/meson-private/tmp1urh_t8_
+Code:
+
+-----------
+Command line: `cc /home/wsl/YSPACE/component-template/component-template/build/server-Linux/meson-private/tmp1urh_t8_/testfile.c -o /home/wsl/YSPACE/component-template/component-template/build/server-Linux/meson-private/tmp1urh_t8_/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE --print-search-dirs` -> 0
+stdout:
+install: /usr/lib/gcc/x86_64-linux-gnu/11/
+programs: =/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/bin/
+libraries: =/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/11/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/11/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+-----------

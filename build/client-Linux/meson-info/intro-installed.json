@@ -1,0 +1,10 @@
+{
+  "/home/wsl/YSPACE/component-template/component-template/build/client-Linux/subprojects/srv-abs/libsrv-abs.so": "/usr/local/lib/x86_64-linux-gnu/libsrv-abs.so",
+  "/home/wsl/YSPACE/component-template/component-template/build/client-Linux/meson-private/srv-abs.pc": "/usr/local/lib/x86_64-linux-gnu/pkgconfig/srv-abs.pc",
+  "/home/wsl/YSPACE/component-template/component-template/build/client-Linux/subprojects/srv-abs/include/service/conf_srv.h": "/usr/local/include/service/conf_srv.h",
+  "/home/wsl/YSPACE/component-template/component-template/build/client-Linux/common/include/templ/conf_templ.h": "/usr/local/include/templ/conf_templ.h",
+  "/home/wsl/YSPACE/component-template/component-template/subprojects/srv-abs/include/service": "/usr/local/include/service",
+  "/home/wsl/YSPACE/component-template/component-template/subprojects/srv-abs/include/service-crc": "/usr/local/include/service-crc",
+  "/home/wsl/YSPACE/component-template/component-template/subprojects/srv-abs/include/service-csp": "/usr/local/include/service-csp",
+  "/home/wsl/YSPACE/component-template/component-template/common/include/templ": "/usr/local/include/templ"
+}

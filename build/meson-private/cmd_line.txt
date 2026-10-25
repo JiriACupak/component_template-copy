@@ -1,0 +1,5 @@
+[options]
+build_cmdline = plugin
+
+[properties]
+

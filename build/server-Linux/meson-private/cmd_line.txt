@@ -1,0 +1,6 @@
+[options]
+build_platform = Linux
+build_class = server
+
+[properties]
+

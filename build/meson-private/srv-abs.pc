@@ -1,0 +1,9 @@
+prefix=/usr/local
+includedir=${prefix}/include
+libdir=${prefix}/lib/x86_64-linux-gnu
+
+Name: srv-abs
+Description: service-abstraction: srv-abs
+Version: 1.0.0
+Libs: -L${libdir} -lsrv-abs
+Cflags: -I${includedir}

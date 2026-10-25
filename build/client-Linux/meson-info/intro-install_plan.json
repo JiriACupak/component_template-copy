@@ -1,0 +1,64 @@
+{
+  "targets": {
+    "/home/wsl/YSPACE/component-template/component-template/build/client-Linux/subprojects/srv-abs/libsrv-abs.so": {
+      "destination": "{libdir_shared}/libsrv-abs.so",
+      "tag": "runtime",
+      "subproject": "srv-abs",
+      "install_rpath": null,
+      "build_rpaths": []
+    }
+  },
+  "data": {
+    "/home/wsl/YSPACE/component-template/component-template/build/client-Linux/meson-private/srv-abs.pc": {
+      "destination": "{libdir}/pkgconfig/srv-abs.pc",
+      "tag": "devel",
+      "subproject": "srv-abs"
+    }
+  },
+  "configure": {
+    "/home/wsl/YSPACE/component-template/component-template/build/client-Linux/subprojects/srv-abs/include/service/conf_srv.h": {
+      "destination": "{includedir}/service/conf_srv.h",
+      "tag": "devel",
+      "subproject": "srv-abs"
+    },
+    "/home/wsl/YSPACE/component-template/component-template/build/client-Linux/common/include/templ/conf_templ.h": {
+      "destination": "{includedir}/templ/conf_templ.h",
+      "tag": "devel",
+      "subproject": null
+    }
+  },
+  "install_subdirs": {
+    "/home/wsl/YSPACE/component-template/component-template/subprojects/srv-abs/include/service": {
+      "destination": "{includedir}/service",
+      "tag": "devel",
+      "subproject": "srv-abs",
+      "exclude_dirs": [],
+      "exclude_files": [
+        "meson.build"
+      ]
+    },
+    "/home/wsl/YSPACE/component-template/component-template/subprojects/srv-abs/include/service-crc": {
+      "destination": "{includedir}/service-crc",
+      "tag": "devel",
+      "subproject": "srv-abs",
+      "exclude_dirs": [],
+      "exclude_files": []
+    },
+    "/home/wsl/YSPACE/component-template/component-template/subprojects/srv-abs/include/service-csp": {
+      "destination": "{includedir}/service-csp",
+      "tag": "devel",
+      "subproject": "srv-abs",
+      "exclude_dirs": [],
+      "exclude_files": []
+    },
+    "/home/wsl/YSPACE/component-template/component-template/common/include/templ": {
+      "destination": "{includedir}/templ",
+      "tag": "devel",
+      "subproject": null,
+      "exclude_dirs": [],
+      "exclude_files": [
+        "meson.build"
+      ]
+    }
+  }
+}

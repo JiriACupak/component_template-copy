@@ -1,0 +1,23 @@
+# ninja log v7
+15	86	1792169946889542154	libcomp-templ-srv.so.p/srv_src_server_com.c.o	afffbda118276c6a
+0	66	1792169305388270594	subprojects/srv-abs/libsrv-abs.so.p/src_service.c.o	b62b9b3de0623e31
+1	73	1792169305400521363	subprojects/srv-abs/libsrv-abs.so.p/src_crc32.c.o	51c16ee5fac66fd3
+1	74	1792169305399700846	subprojects/srv-abs/libsrv-abs.so.p/src_service_os.c.o	a45617edfad6b2d8
+14	98	1792169946901328065	libcomp-templ-srv.so.p/lib_sally-backends_com_memcom_backend.c.o	1bcc6ee0036689db
+14	133	1792169946937062254	libcomp-templ-srv.so.p/lib_sally-backends_os_posix_backend.c.o	38a312b934e78074
+15	119	1792169946920723526	comp-templ-srv-bin.p/lib_sally-backends_os_posix_backend.c.o	f09890b69515ce9b
+14	134	1792169946933174062	libcomp-templ-srv.so.p/lib_sally-backends_com_posix_tty_backend.c.o	37bc58ae0a2aebee
+16	122	1792169946924271660	comp-templ-srv-bin.p/lib_sally-backends_com_posix_tty_backend.c.o	56f48c86f54d867e
+15	157	1792169946960199333	comp-templ-srv-bin.p/lib_sally-backends_fs_posix_backend.c.o	2f2a0ef837b28f6b
+13	143	1792169946946902823	libcomp-templ-srv.so.p/lib_sally-backends_fs_posix_backend.c.o	19b7e15761b8c43b
+98	164	1792169946968218601	comp-templ-srv-bin.p/autotest_srv_server_com.c.o	521780143b3cd5ce
+86	140	1792169946943113214	comp-templ-srv-bin.p/lib_sally-backends_com_memcom_backend.c.o	6e6f9ee6901a6dab
+74	241	1792169305568451601	subprojects/srv-abs/libsrv-abs.so	479d3360e630cef0
+241	329	1792169305649446056	subprojects/srv-abs/libsrv-abs.so.p/libsrv-abs.so.symbols	ccb5faf02b34cd42
+119	393	1792169947193562591	comp-templ-srv-bin.p/lib_munit_munit.c.o	ba799a9af561d0bb
+143	322	1792169947124998087	libcomp-templ-srv.so	670de7df7a542cac
+12	109	1792169305956329960	libcomp-templ-srv.so.p/libcomp-templ-srv.so.symbols	34469e7e898f9f73
+393	635	1792169947438340717	comp-templ-srv-bin	7ae370d312a53503
+6	6486	1792170728345476205	build.ninja	ad9e611b95e87d4
+0	5766	1792170728345476205	build.ninja	ad9e611b95e87d4
+13	94	1792170728406142882	libcomp-templ-srv.so.p/libcomp-templ-srv.so.symbols	34469e7e898f9f73

@@ -1,0 +1,23 @@
+# ninja log v7
+1	31	1792169312860403920	subprojects/srv-abs/libsrv-abs.so.p/src_crc32.c.o	51c16ee5fac66fd3
+0	42	1792169312876517748	subprojects/srv-abs/libsrv-abs.so.p/src_service.c.o	b62b9b3de0623e31
+1	55	1792169953668359967	libcomp-templ-cli.so.p/lib_sally-backends_os_posix_backend.c.o	bb9e9b40161bbca5
+1	112	1792169953729515938	libcomp-templ-cli.so.p/lib_sally-backends_fs_posix_backend.c.o	86b0e83e6ff8c699
+0	86	1792169312920738339	subprojects/srv-abs/libsrv-abs.so.p/src_service_os.c.o	a45617edfad6b2d8
+2	48	1792169953661031565	libcomp-templ-cli.so.p/cli_src_client_com.c.o	e3287026cd5c8092
+3	80	1792169953693033410	comp-templ-cli-bin.p/lib_sally-backends_os_posix_backend.c.o	9f8097b66772f988
+2	93	1792169953710973517	libcomp-templ-cli.so.p/lib_sally-backends_com_memcom_backend.c.o	42e9d96839cc1cd1
+2	60	1792169953671970119	libcomp-templ-cli.so.p/lib_sally-backends_com_posix_tty_backend.c.o	d08651da89f6d4c1
+3	95	1792169953712756899	comp-templ-cli-bin.p/lib_sally-backends_fs_posix_backend.c.o	3aad58a276c288df
+4	51	1792169953668359967	comp-templ-cli-bin.p/lib_sally-backends_com_posix_tty_backend.c.o	a72accf2bd067122
+51	87	1792169953704814671	comp-templ-cli-bin.p/autotest_cli_client_com.c.o	ac83bfd00962a47a
+48	101	1792169953717296534	comp-templ-cli-bin.p/lib_sally-backends_com_memcom_backend.c.o	9bb4266ff7c8236f
+87	247	1792169313081343076	subprojects/srv-abs/libsrv-abs.so	479d3360e630cef0
+247	315	1792169313142623245	subprojects/srv-abs/libsrv-abs.so.p/libsrv-abs.so.symbols	49122216d9a2c2dc
+55	301	1792169953917712495	comp-templ-cli-bin.p/lib_munit_munit.c.o	14986fcb7fc85d2
+112	286	1792169953903265702	libcomp-templ-cli.so	b47ea5cf18a2f70b
+0	117	1792169313361252949	libcomp-templ-cli.so.p/libcomp-templ-cli.so.symbols	e0c865b29373db49
+450	611	1792169954228407126	comp-templ-cli-bin	662f121a9460c643
+3	5862	1792170735507302638	build.ninja	ad9e611b95e87d4
+24	6803	1792170735507302638	build.ninja	ad9e611b95e87d4
+0	74	1792170735567969315	libcomp-templ-cli.so.p/libcomp-templ-cli.so.symbols	e0c865b29373db49

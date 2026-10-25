@@ -1,0 +1,11 @@
+[
+  "/home/wsl/YSPACE/component-template/component-template/meson.build",
+  "/home/wsl/YSPACE/component-template/component-template/meson_options.txt",
+  "/usr/bin/git",
+  "/home/wsl/YSPACE/component-template/component-template/subprojects/srv-abs/meson.build",
+  "/home/wsl/YSPACE/component-template/component-template/subprojects/srv-abs/meson_options.txt",
+  "/home/wsl/YSPACE/component-template/component-template/subprojects/srv-abs/include/service/meson.build",
+  "/home/wsl/YSPACE/component-template/component-template/subprojects/srv-abs/include/conf_srv.h.in",
+  "/home/wsl/YSPACE/component-template/component-template/common/include/templ/meson.build",
+  "/home/wsl/YSPACE/component-template/component-template/common/include/conf_templ.h.in"
+]

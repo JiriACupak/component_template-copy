@@ -1,0 +1,7 @@
+#ifndef _INCLUDE_CONF_SERVICE_H
+#define _INCLUDE_CONF_SERVICE_H
+
+#define SERVICE_FS_MAX_FILENAME_LEN 64
+/* #undef SERVICE_CSP */
+
+#endif

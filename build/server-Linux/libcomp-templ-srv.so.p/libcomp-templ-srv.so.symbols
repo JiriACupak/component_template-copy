@@ -1,0 +1,72 @@
+ 0x000000000000000e (SONAME)             Library soname: [libcomp-templ-srv.so]
+backend_fs_posix D 140
+backend_memcom D 48
+backend_os_posix D 98
+backend_posix_tty D 48
+memcom_available T
+memcom_close T
+memcom_handle_free T
+memcom_handle_malloc T
+memcom_open T
+memcom_port_pool B 2200
+memcom_read T
+memcom_write T
+posix_check T
+posix_chmod T
+posix_close T
+posix_closedir T
+posix_dir_handle_free T
+posix_dir_handle_malloc T
+posix_eof T
+posix_file_handle_free T
+posix_file_malloc T
+posix_flush T
+posix_format T
+posix_free T
+posix_gc T
+posix_get_bad_blocks T
+posix_get_free_space T
+posix_init T
+posix_is_file T
+posix_is_inside_interrupt T
+posix_lseek T
+posix_malloc T
+posix_mkdir T
+posix_mount T
+posix_mutex_create T
+posix_mutex_lock T
+posix_mutex_unlock T
+posix_open T
+posix_opendir T
+posix_path_validate T
+posix_queue_create T
+posix_queue_delete T
+posix_queue_receive T
+posix_queue_send T
+posix_read T
+posix_readdir T
+posix_rename T
+posix_rmdir T
+posix_size T
+posix_stat T
+posix_tell T
+posix_thread_create T
+posix_thread_delay T
+posix_thread_delete T
+posix_thread_get_time_count T
+posix_thread_resume T
+posix_thread_suspend T
+posix_thread_wait_for T
+posix_unlink T
+posix_unmount T
+posix_wipe T
+posix_write T
+server_process_cmd T
+server_set_backends T
+tty_available T
+tty_close T
+tty_handle_free T
+tty_handle_malloc T
+tty_open T
+tty_read T
+tty_write T

@@ -1,0 +1,10 @@
+prefix=/home/wsl/YSPACE/component-template/component-template/build
+includedir=${prefix}/include
+libdir=${prefix}/lib/x86_64-linux-gnu
+srcdir=/home/wsl/YSPACE/component-template/component-template
+
+Name: srv-abs
+Description: service-abstraction: srv-abs
+Version: 1.0.0
+Libs: -L${prefix}/subprojects/srv-abs -lsrv-abs
+Cflags: -I${prefix}/subprojects/srv-abs/include -I${srcdir}/subprojects/srv-abs/include -I${prefix}/subprojects/srv-abs -I${srcdir}/subprojects/srv-abs

@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0.0",
+  "descriptive_name": "comp-templ",
+  "license": [
+    "unknown"
+  ],
+  "license_files": [],
+  "subproject_dir": "subprojects",
+  "subprojects": [
+    {
+      "name": "srv-abs",
+      "version": "1.0.0",
+      "descriptive_name": "service-abstraction"
+    }
+  ]
+}

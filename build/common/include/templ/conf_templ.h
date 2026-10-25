@@ -1,0 +1,6 @@
+#ifndef INCLUDE_CONF_TEMPLATE_H
+#define INCLUDE_CONF_TEMPLATE_H
+
+/* #undef TEMPLATE_OPTION */
+
+#endif
